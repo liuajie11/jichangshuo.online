@@ -36,5 +36,30 @@
       <section id="risk"><span class="kicker">04 / 风险与购买建议</span><h2>哪些信息需要再次确认</h2><p>${clean(data.risk)}</p><ul class="article-list"><li>首次购买优先月付或最短周期，不用多年预付换取表面低价。</li><li>付款前确认套餐流量、倍率、在线设备数、退款条件和续费价格。</li><li>保存官网、防失联入口和工单渠道；订阅链接属于账号凭证，不要公开分享。</li><li>AI 和流媒体解锁会随 IP、地区与平台策略变化，只能以购买后的实际测试为准。</li></ul></section>
       <section id="faq"><span class="kicker">05 / 常见问题</span><h2>${data.name}购买前 FAQ</h2><div class="faq-list"><details><summary>${data.name}适合长期使用吗？</summary><p>当前公开数据表明它适合${clean(data.fit)}，但是否适合长期使用只能由你的运营商、地区和晚高峰测试决定。建议至少完成一个月付周期后再决定是否延长。</p></details><details><summary>${data.name}的参考速度能在我这里达到吗？</summary><p>不能保证。${data.speed} 是公开环境下的速度快照，设备性能、本地带宽、入口运营商、测速线程和时间段都会影响结果。</p></details><details><summary>应该选哪个套餐？</summary><p>先按每月真实流量选择最低够用档，再核对节点倍率。轻度用户不应为了更大的标称流量直接购买长期高档套餐。</p></details></div></section>
       <section><div class="affiliate-box"><h2>先短周期测试 ${data.name}</h2><p>以下按钮使用你提供的推广注册链接。推广关系不代表速度、稳定性或解锁承诺，付款前请核对最终域名与结算信息。</p><a class="button primary" href="${data.affiliate}" target="_blank" rel="nofollow sponsored noreferrer">打开注册链接 →</a><p class="disclosure">推广披露：该链接包含邀请码或推广参数，站点可能因此获得佣金。</p></div></section>
-    </article><aside class="article-sidebar"><div class="sidebar-panel"><h3>QUICK PROFILE</h3><ul class="sidebar-list"><li>品牌：${data.name}</li><li>线路：${clean(data.line)}</li><li>场景：${clean(data.fit)}</li><li>客户端：${data.client}</li></ul></div><div class="sidebar-panel"><h3>TEST POLICY</h3><p>数据日期：2026-10-12</p><p>页面仅展示整理后的公开快照，不展示外部资料站名称。本站尚未完成统一环境复测，因此不会把公开数据标记为本站实测结果。</p></div><a class="button ghost" href="reviews.html">← 返回全部评测</a></aside></div></section>`;
+      <!-- 站内互联导航 -->
+      <section class="article-interlinks" style="margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--line);">
+        <h3 style="font-size: 1.15rem; margin-bottom: 14px; color: var(--ink);">相关评测与参考导航</h3>
+        <div class="grid cols-3" style="gap: 12px;">
+          <a class="card" href="recommendations.html" style="min-height: auto; padding: 16px; text-decoration: none;">
+            <strong style="color: var(--cyan); font-size: 0.9rem;">场景推荐指南 →</strong>
+            <p style="font-size: 0.8rem; color: var(--muted); margin: 6px 0 0;">与同类 ${clean(data.fit)} 机场横向对比</p>
+          </a>
+          <a class="card" href="ranking.html" style="min-height: auto; padding: 16px; text-decoration: none;">
+            <strong style="color: var(--cyan); font-size: 0.9rem;">综合实力天梯 →</strong>
+            <p style="font-size: 0.8rem; color: var(--muted); margin: 6px 0 0;">查看 ${data.name} 在 6 维模型中的排名</p>
+          </a>
+          <a class="card" href="pricing.html" style="min-height: auto; padding: 16px; text-decoration: none;">
+            <strong style="color: var(--cyan); font-size: 0.9rem;">价格套餐横评 →</strong>
+            <p style="font-size: 0.8rem; color: var(--muted); margin: 6px 0 0;">对比单 G 费用、倍率与月付门槛</p>
+          </a>
+        </div>
+        <div style="margin-top: 12px; display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="clients.html" style="font-size: 0.85rem; color: var(--muted); text-decoration: underline;">客户端配置指引</a>
+          <span style="color: var(--line);">|</span>
+          <a href="alerts.html" style="font-size: 0.85rem; color: var(--orange); text-decoration: underline;">跑路预警与避坑黑名单</a>
+          <span style="color: var(--line);">|</span>
+          <a href="help.html" style="font-size: 0.85rem; color: var(--muted); text-decoration: underline;">问题中心 100 问</a>
+        </div>
+      </section>
+    </article><aside class="article-sidebar"><div class="sidebar-panel"><h3>QUICK PROFILE</h3><ul class="sidebar-list"><li>品牌：${data.name}</li><li>线路：${clean(data.line)}</li><li>场景：${clean(data.fit)}</li><li>客户端：${data.client}</li></ul></div><div class="sidebar-panel"><h3>SITE INTERLINKS</h3><ul class="sidebar-list"><li><a href="recommendations.html" style="color:var(--cyan);">精选推荐分类</a></li><li><a href="ranking.html" style="color:var(--cyan);">全网综合排行榜</a></li><li><a href="pricing.html" style="color:var(--cyan);">15家价格套餐横评</a></li><li><a href="alerts.html" style="color:var(--orange);">失联与跑路预警雷达</a></li><li><a href="about.html" style="color:var(--muted);">数据采集与编辑原则</a></li></ul></div><div class="sidebar-panel"><h3>TEST POLICY</h3><p>数据日期：2026-10-12</p><p>页面仅展示整理后的公开快照，不展示外部资料站名称。本站尚未完成统一环境复测，因此不会把公开数据标记为本站实测结果。</p></div><a class="button ghost" href="reviews.html">← 返回全部评测</a></aside></div></section>`;
 })();
