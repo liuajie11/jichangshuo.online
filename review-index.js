@@ -18,7 +18,8 @@
     ["huanqiuti", "review-huanqiuti.html", "新手 / 轻办公"],
     ["shandianshu", "review-shandianshu.html", "双入口 / 高速度"],
     ["liulianyun", "review-liulianyun.html", "影音 / 均衡"],
-    ["shenxing", "review-shenxing.html", "移动 / 智能路由"]
+    ["shenxing", "review-shenxing.html", "移动 / 智能路由"],
+    ["ermao", "review-ermao.html", "IEPL 专线 / 130GB 大流量"]
   ];
 
   root.innerHTML = order.map(([slug, article, tag], index) => {
